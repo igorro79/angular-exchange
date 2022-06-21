@@ -1,9 +1,9 @@
 <div class="container">
-  <app-header>
-    <!-- ( {{ currencys.length }} &&
-    <app-rates *ngFor="let item of currencys" [item]="item"></app-rates> ) -->
-  </app-header>
+  <app-header> </app-header>
+
+  <app-rates *ngFor="let item of currencys" [item]="item"></app-rates>
   <app-currency-form
+    class="form"
     data-name="one"
     [value]="valueOne"
     currency="selectedOptionOne"

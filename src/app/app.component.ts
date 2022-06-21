@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { Currency } from './shared/models/Currency.model';
 
@@ -55,7 +55,6 @@ export class AppComponent {
       ? (valueTwo * (rate2 ? rate2.rate : 1)) / (rate1 ? rate1.rate : 1)
       : (valueOne * (rate1 ? rate1.rate : 1)) / (rate2 ? rate2.rate : 1);
 
-    console.log(convert);
     wrapped ? (this.valueOne = convert) : (this.valueTwo = convert);
   }
 

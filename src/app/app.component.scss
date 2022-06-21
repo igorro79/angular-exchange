@@ -5,3 +5,9 @@
   border: 1px dashed #ccc;
   border-radius: 5px;
 }
+.form {
+  display: block;
+}
+.form:not(:last-child) {
+  margin-bottom: 10px;
+}
